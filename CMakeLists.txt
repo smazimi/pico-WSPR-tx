@@ -10,6 +10,7 @@ set(CMAKE_CXX_STANDARD 17)
 # Initialise pico_sdk from installed location
 # (note this can come from environment, CMake cache etc)
 set(PICO_BOARD waveshare_rp2040_zero CACHE STRING "Board type")
+add_compile_definitions(PICO_DEFAULT_LED_PIN=16)
 
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
